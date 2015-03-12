@@ -6,7 +6,7 @@ Sanitizes and displays HTML content from a resource.
 * [Appearance](#appearance)
 * [Usage](#usage)
 * [Features](#features)
-* [Integration](#Integration)
+* [Integration](#integration)
 * [References](#references)
 
 

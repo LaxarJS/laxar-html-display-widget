@@ -58,10 +58,10 @@ When displaying internationalized content, the widget MUST use the current langu
 The widget supports the following event patterns as specified by the [LaxarJS Patterns] document.
 
 #### Resources
-* Resource: content.resource
-* Role: Slave
-* Access: Read/Write
-* Description: Provides the HTML content, which should be displayed.
+* Resource: `content.resource`
+   * Role: Slave
+   * Access: Read/Write
+   * Description: Provides the HTML content, which should be displayed.
 
 
 ## References

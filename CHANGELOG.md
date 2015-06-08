@@ -2,6 +2,7 @@
 
 ## Last Changes
 
+- [#5](https://github.com/LaxarJS/ax-html-display-widget/issues/5): Fixed LaxarJS dependencies (downgrade from v1.x to v0.x)
 - [#4](https://github.com/LaxarJS/ax-html-display-widget/issues/4): Fix names of dependencies
 
 

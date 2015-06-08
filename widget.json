@@ -10,7 +10,7 @@
    "compatibility": [ "json-patch" ],
 
    "controls": [
-      "laxar-uikit/controls/i18n"
+      "laxar_uikit/controls/i18n"
    ],
 
    "features": {

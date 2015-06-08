@@ -10,13 +10,14 @@
    "compatibility": [ "json-patch" ],
 
    "controls": [
-      "laxar_uikit/controls/i18n"
+      "laxar-uikit/controls/i18n"
    ],
 
    "features": {
       "$schema": "http://json-schema.org/draft-04/schema#",
       "type": "object",
       "properties": {
+
          "content": {
             "type": "object",
             "required": [ "resource" ],
@@ -33,6 +34,7 @@
             },
             "additionalProperties": false
          },
+
          "i18n": {
             "description": "Which locale to use for displaying this widget.",
             "type": "object",

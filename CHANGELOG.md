@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.3.1
+
 - [#4](https://github.com/LaxarJS/ax-html-display-widget/issues/4): Fix names of dependencies
 
 

@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v2.0.0
+
 - [#6](https://github.com/LaxarJS/ax-html-display-widget/issues/6): Updated LaxarJS dependencies to v1.0.0.
   + **BREAKING CHANGE:** see ticket for details
 

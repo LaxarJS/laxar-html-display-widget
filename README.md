@@ -1,4 +1,4 @@
-# AxHtmlDisplayWidget
+# AxHtmlDisplayWidget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
 
 Sanitizes and displays HTML content from a resource.
 

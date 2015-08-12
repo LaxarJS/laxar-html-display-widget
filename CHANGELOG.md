@@ -2,6 +2,8 @@
 
 ## Last Changes
 
+- [#8](https://github.com/LaxarJS/ax-html-display-widget/issues/8): Added a `.travis.yml` for open continuous integration
+
 
 ## v2.0.0
 

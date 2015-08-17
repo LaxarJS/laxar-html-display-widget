@@ -4,17 +4,18 @@
  * http://laxarjs.org/license
  */
 define( [
+   'json!../widget.json',
    '../ax-html-display-widget',
    'laxar/laxar_testing',
    './fixtures'
-], function( widgetModule, ax, fixtures ) {
+], function( descriptor, widgetModule, ax, fixtures ) {
    'use strict';
 
    describe( 'An AxHtmlDisplayWidget', function() {
       var testBed;
 
       beforeEach( function setup() {
-         testBed = ax.testing.portalMocksAngular.createControllerTestBed( 'laxarjs/ax-html-display-widget' );
+         testBed = ax.testing.portalMocksAngular.createControllerTestBed( descriptor );
          testBed.useWidgetJson();
          testBed.featuresMock = { content: { resource: 'myResource' } };
       } );

@@ -1,4 +1,4 @@
-# AxHtmlDisplayWidget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
+# ax-html-display-widget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
 
 Sanitizes and displays HTML content from a resource.
 
@@ -11,9 +11,9 @@ Sanitizes and displays HTML content from a resource.
 
 
 ## Appearance
-![Illustration of the AxHtmlDisplayWidget](docs/img/example.png)
+![Illustration of the ax-html-display-widget](docs/img/example.png)
 
-An AxHtmlDisplayWidget displaying a text with a headline received through a resource.
+An ax-html-display-widget displaying a text with a headline received through a resource.
 
 
 ## Usage
@@ -34,7 +34,7 @@ For installation instruction take a look at the [LaxarJS documentation](https://
    }
 }
 ```
-Use this configuration on a page to get an AxHtmlDisplayWidget which shows the HTML-Content from the resource "info".
+Use this configuration on a page to get an ax-html-display-widget which shows the HTML-Content from the resource "info".
 
 For full configuration options refer to the [widget.json](widget.json).
 

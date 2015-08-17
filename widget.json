@@ -1,5 +1,5 @@
 {
-   "name": "AxHtmlDisplayWidget",
+   "name": "ax-html-display-widget",
    "description": "Sanitizes and displays HTML content from a resource.",
 
    "integration": {

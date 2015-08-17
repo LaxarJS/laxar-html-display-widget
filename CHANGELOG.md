@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v2.1.0
+
 - [#7](https://github.com/LaxarJS/ax-html-display-widget/issues/7): Support AMD references (and installation through bower)
 - [#8](https://github.com/LaxarJS/ax-html-display-widget/issues/8): Added a `.travis.yml` for open continuous integration
 

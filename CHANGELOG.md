@@ -2,6 +2,8 @@
 
 ## Last Changes
 
+- [#9](https://github.com/LaxarJS/ax-html-display-widget/issues/9): Expanded the widget definition
+
 
 ## v2.1.0
 

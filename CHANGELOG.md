@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+- [#11](https://github.com/LaxarJS/ax-html-display-widget/issues/11): update to webpack, LaxarJS 2, Angular 1.6 and Jasmine 2
+    + **BREAKING CHANGE:** see ticket for details
+
 
 ## v2.3.0
 

@@ -15,11 +15,11 @@ define( [
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   Controller.$inject = [ '$scope' ];
+   Controller.$inject = [ '$scope', 'axI18n' ];
 
-   function Controller( $scope ) {
+   function Controller( $scope, i18n ) {
 
-      patterns.i18n.handlerFor( $scope ).scopeLocaleFromFeature( 'i18n' );
+      $scope.i18n = i18n;
 
       $scope.model = { i18nHtmlContent: '' };
       $scope.resources = {};

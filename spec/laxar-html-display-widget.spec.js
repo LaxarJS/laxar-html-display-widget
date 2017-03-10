@@ -4,10 +4,9 @@
  * http://laxarjs.org/license
  */
 define( [
-   'json!../widget.json',
    'laxar-mocks',
    './fixtures'
-], function( descriptor, axMocks, fixtures ) {
+], function( axMocks, fixtures ) {
    'use strict';
 
    var widgetEventBus;
@@ -18,7 +17,7 @@ define( [
 
    function createSetup( widgetConfiguration ) {
 
-      beforeEach( axMocks.createSetupForWidget( descriptor, {
+      beforeEach( axMocks.setupForWidget( {
          knownMissingResources: [ 'ax-html-display-widget.css', 'ax-i18n-control.css' ]
       } ) );
 
@@ -37,9 +36,7 @@ define( [
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   afterEach( function() {
-      axMocks.tearDown();
-   } );
+   afterEach( axMocks.tearDown );
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -82,8 +79,7 @@ define( [
             widgetScope.model.i18nHtmlContent = fixtures.data;
 
             useLocale( 'en' );
-            expect( widgetScope.i18n.locale ).toEqual( 'default' );
-            expect( widgetScope.i18n.tags[ 'default' ] ).toEqual( 'en' );
+            expect( widgetScope.i18n.languageTag() ).toEqual( 'en' );
          } );
       } );
 

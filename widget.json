@@ -1,5 +1,5 @@
 {
-   "name": "ax-html-display-widget",
+   "name": "laxar-html-display-widget",
    "description": "Sanitizes and displays HTML content from a resource.",
 
    "integration": {
@@ -9,9 +9,7 @@
 
    "compatibility": [ "json-patch" ],
 
-   "controls": [
-      "laxar-uikit/controls/i18n"
-   ],
+   "controls": [],
 
    "features": {
       "$schema": "http://json-schema.org/draft-04/schema#",

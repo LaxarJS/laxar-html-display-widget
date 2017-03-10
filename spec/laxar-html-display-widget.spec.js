@@ -4,10 +4,9 @@
  * http://laxarjs.org/license
  */
 define( [
-   'json!../widget.json',
    'laxar-mocks',
    './fixtures'
-], function( descriptor, axMocks, fixtures ) {
+], function( axMocks, fixtures ) {
    'use strict';
 
    var widgetEventBus;
@@ -18,7 +17,7 @@ define( [
 
    function createSetup( widgetConfiguration ) {
 
-      beforeEach( axMocks.createSetupForWidget( descriptor, {
+      beforeEach( axMocks.setupForWidget( {
          knownMissingResources: [ 'ax-html-display-widget.css', 'ax-i18n-control.css' ]
       } ) );
 

@@ -36,9 +36,7 @@ define( [
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   afterEach( function() {
-      axMocks.tearDown();
-   } );
+   afterEach( axMocks.tearDown );
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -81,8 +79,7 @@ define( [
             widgetScope.model.i18nHtmlContent = fixtures.data;
 
             useLocale( 'en' );
-            expect( widgetScope.i18n.locale ).toEqual( 'default' );
-            expect( widgetScope.i18n.tags[ 'default' ] ).toEqual( 'en' );
+            expect( widgetScope.i18n.languageTag() ).toEqual( 'en' );
          } );
       } );
 

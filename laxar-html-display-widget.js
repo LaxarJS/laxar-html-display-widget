@@ -6,12 +6,13 @@
 define( [
    'angular',
    'laxar',
-   'laxar-patterns'
+   'laxar-patterns',
+   'angular-sanitize'
 ], function( ng, ax, patterns ) {
    'use strict';
 
    var moduleName = 'axHtmlDisplayWidget';
-   var module     = ng.module( moduleName, [] );
+   var module     = ng.module( moduleName, [ 'ngSanitize' ] );
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -25,9 +26,11 @@ define( [
       $scope.resources = {};
 
       patterns.resources.handlerFor( $scope ).registerResourceFromFeature( 'content', {
-         onUpdateReplace: function() {
+         onUpdateReplace: function( event ) {
+            console.log($scope.model.i18nHtmlContent);
             $scope.model.i18nHtmlContent =
                ax.object.path( $scope.resources.content, $scope.features.content.attribute );
+            console.log($scope.model.i18nHtmlContent);
          }
       } );
 

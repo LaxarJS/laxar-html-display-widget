@@ -1,42 +1,40 @@
 /**
- * Copyright 2015 aixigo AG
+ * Copyright 2015-2017 aixigo AG
  * Released under the MIT license.
  * http://laxarjs.org/license
  */
-define( [
-   'angular',
-   'laxar',
-   'laxar-patterns'
-], function( ng, ax, patterns ) {
-   'use strict';
+import * as ax from 'laxar';
+import * as patterns from 'laxar-patterns';
+export const injections = [ 'axWithDom', 'axFeatures', 'axEventBus', 'axI18n', 'axContext' ];
+export function create( axWithDom, features, eventBus, axI18n, context ) {
 
-   var moduleName = 'axHtmlDisplayWidget';
-   var module     = ng.module( moduleName, [] );
+   let htmlObject;
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   Controller.$inject = [ '$scope', 'axI18n' ];
-
-   function Controller( $scope, i18n ) {
-
-      $scope.i18n = i18n;
-
-      $scope.model = { i18nHtmlContent: '' };
-      $scope.resources = {};
-
-      patterns.resources.handlerFor( $scope ).registerResourceFromFeature( 'content', {
-         onUpdateReplace: function() {
-            $scope.model.i18nHtmlContent =
-               ax.object.path( $scope.resources.content, $scope.features.content.attribute );
+   patterns.resources.handlerFor( context ).registerResourceFromFeature( 'content', {
+      onUpdateReplace() {
+         htmlObject = ax.object.path( context.resources.content, features.content.attribute );
+         try {
+            updateView();
          }
-      } );
+         finally { /*DO NOTHING*/ }
+      }
+   } );
 
+   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   axI18n.whenLocaleChanged( updateView );
+
+   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   function updateView() {
+      axWithDom( element => {
+         element.querySelector( 'div' ).innerHTML = axI18n.localize( htmlObject );
+      } );
    }
 
-   module.controller( 'AxHtmlDisplayWidgetController', Controller );
-
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   return module;
-
-} );
+   return { onDomAvailable: updateView };
+}

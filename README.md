@@ -1,6 +1,6 @@
 # ax-html-display-widget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
 
-Sanitizes and displays HTML content from a resource.
+Displays HTML content from a resource.
 
 ## Content
 * [Appearance](#appearance)
@@ -19,13 +19,13 @@ An ax-html-display-widget displaying a text with a headline received through a r
 ## Usage
 
 ### Installation
-For installation instruction take a look at the [LaxarJS documentation](https://github.com/LaxarJS/laxar/blob/master/docs/manuals/installing_widgets.md).
+For installation instruction take a look at the [LaxarJS documentation](http://laxarjs.org/docs/laxar-v2-latest/manuals/installing_widgets/).
 
 
 ### Configuration example
 ```json
 {
-   "widget": "laxarjs/ax-html-display-widget",
+   "widget": "laxar-html-display-widget",
    "features": {
       "content": {
          "resource": "info",
@@ -34,7 +34,7 @@ For installation instruction take a look at the [LaxarJS documentation](https://
    }
 }
 ```
-Use this configuration on a page to get an ax-html-display-widget which shows the HTML-Content from the resource "info".
+Use this configuration on a page to get an laxar-html-display-widget which shows the HTML-Content from the resource "info".
 
 For full configuration options refer to the [widget.json](widget.json).
 
@@ -73,6 +73,6 @@ Refer to the bower.json for the specific version that is normative for this docu
 * [LaxarJS Patterns]
 * [LaxarJS i18n]
 
-[LaxarJS Concepts]: https://github.com/LaxarJS/laxar/blob/master/docs/concepts.md "LaxarJS Concepts"
-[LaxarJS Patterns]: https://github.com/LaxarJS/laxar_patterns/blob/master/docs/index.md "LaxarJS Patterns"
-[LaxarJS i18n]: https://github.com/LaxarJS/laxar/blob/master/docs/manuals/i18n.md "LaxarJS i18n"
+[LaxarJS Concepts]: http://laxarjs.org/docs/laxar-v2-latest/concepts/ "LaxarJS Concepts"
+[LaxarJS Patterns]: http://laxarjs.org/docs/laxar-patterns-v2-latest/ "LaxarJS Patterns"
+[LaxarJS i18n]: http://laxarjs.org/docs/laxar-v2-latest/manuals/i18n/ "LaxarJS i18n"

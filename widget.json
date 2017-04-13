@@ -3,7 +3,7 @@
    "description": "Sanitizes and displays HTML content from a resource.",
 
    "integration": {
-      "technology": "angular",
+      "technology": "plain",
       "type": "widget"
    },
 

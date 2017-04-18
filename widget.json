@@ -1,6 +1,6 @@
 {
    "name": "laxar-html-display-widget",
-   "description": "Sanitizes and displays HTML content from a resource.",
+   "description": "Displays HTML content from a resource.",
 
    "integration": {
       "technology": "plain",

@@ -3,7 +3,7 @@
  * Released under the MIT license.
  * http://laxarjs.org/license
  */
-define( {
+export default {
    data: {
       de: '<div>Hallo, Welt!</div>',
       en: '<span>Hello, world!</span>',
@@ -19,6 +19,11 @@ define( {
             value: 'Hallo, schnöde Welt!'
          },
          {
+            op: 'replace',
+            path: '/en',
+            value: '<span>Hello, brave new world!</span>'
+         },
+         {
             op: 'add',
             path: '/fr',
             value: 'Bonjour, le monde!'
@@ -27,10 +32,10 @@ define( {
    },
    data1: {
       de: 'Hallo, schnöde Welt!',
-      en: '<span>Hello, world!</span>',
+      en: '<span>Hello, brave new world!</span>',
       en_US: '<span>Hello, big world!</span>',
       fr: 'Bonjour, le monde!',
-      'default': '<div>Hi!</div>'
+      'default': '<div>Hey!</div>'
    },
    updateEvent2: {
       resource: 'myResource',
@@ -62,7 +67,7 @@ define( {
    },
    data2: {
       de: 'Hallo, Jungs!',
-      en: '<span>Hello, world!</span>',
+      en: '<span>Hello, brave new world!</span>',
       en_US: '<span>Hello, big world!</span>',
       fr: 'Ça va?',
       it: 'Ciao, mondo!'
@@ -75,7 +80,7 @@ define( {
       path: {
          to: {
             content: {
-               de: '<em>This is the content</em>'
+               en: '<em>This is the content</em>'
             }
          }
       }
@@ -103,19 +108,19 @@ define( {
       }
    ],
    patches2: [
-         {
-            op: 'replace',
-            path: '/path/to/content',
-            value: 'New Text'
-         }
+      {
+         op: 'replace',
+         path: '/path/to/content',
+         value: 'New Text'
+      }
    ],
    patches3: [
       {
          op: 'replace',
          path: '/path/to/content',
          value: {
-            de: '<em>This is the content</em>'
+            en: '<em>This is the content</em>'
          }
       }
    ]
-} );
+};

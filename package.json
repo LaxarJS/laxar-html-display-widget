@@ -6,7 +6,7 @@
     "LaxarJS",
     "Widget"
   ],
-  "homepage": "https://github.com/LaxarJS/laxar-html-display-widget#readme",
+  "homepage": "http://laxarjs.org",
   "repository": {
     "type": "https",
     "url": "https://github.com/LaxarJS/laxar-html-display-widget.git"
@@ -17,21 +17,18 @@
   "main": "laxar-html-display-widget.js",
   "browser": "dist/laxar-html-display-widget.js",
   "scripts": {
-    "prepublish": "webpack -p",
-    "start": "webpack-dev-server",
-    "test": "karma start"
+    "prepublish": "npm run dist",
+    "test": "npm run karma && npm run eslint",
+    "dist": "webpack -p",
+    "start": "webpack && webpack-dev-server --inline",
+    "karma": "karma start karma.config.js",
+    "eslint": "eslint *.js spec"
   },
   "dependencies": {
-    "angular": "^1.5.7",
-    "jquery": "^3.1.1",
-    "laxar": "^2.0.0-alpha.16",
-    "laxar-patterns": "^2.0.0-alpha.2",
-    "laxar-uikit": "^2.0.0-alpha.4"
+    "laxar": "^2.0.0",
+    "laxar-patterns": "^2.0.0"
   },
   "devDependencies": {
-    "angular": "^1.5.7",
-    "angular-mocks": "^1.5.7",
-    "angular-sanitize": "^1.5.7",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.4.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -40,15 +37,11 @@
     "eslint-config-laxarjs": "^0.3.0",
     "imports-loader": "^0.7.1",
     "jasmine-core": "~2.5.2",
-    "jquery": "^3.1.1",
     "karma": "^1.5.0",
-    "laxar": "^2.0.0-alpha.16",
-    "laxar-angular-adapter": "^2.0.0-alpha.1",
-    "laxar-infrastructure": "^0.1.0-alpha.4",
-    "laxar-loader": "^2.0.0-alpha.0",
-    "laxar-mocks": "^2.0.0-beta.2",
-    "laxar-uikit": "^2.0.0-alpha.4",
-    "moment": "^2.17.1",
+    "laxar": "^2.0.0",
+    "laxar-infrastructure": "^2.0.0",
+    "laxar-loader": "^2.0.0",
+    "laxar-mocks": "^2.0.0",
     "source-map-support": "^0.4.10",
     "webpack": "^2.2.0-rc.7",
     "webpack-dev-server": "^2.2.0-rc.0",

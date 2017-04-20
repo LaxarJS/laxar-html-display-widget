@@ -11,7 +11,9 @@ module.exports = config => {
    config.set(
       laxarInfrastructure.karma( [ 'spec/laxar-html-display-widget.spec.js' ], {
          context: __dirname,
-         rules: require( './webpack.config.js' )[0].module.rules
+         module: {
+            rules: require( './webpack.config.js' )[ 0 ].module.rules
+         }
       } )
    );
 };

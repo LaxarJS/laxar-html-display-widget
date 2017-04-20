@@ -1,5 +1,7 @@
 /**
- * Copyright 2017
+ * Copyright 2015-2017 aixigo AG
+ * Released under the MIT license.
+ * http://laxarjs.org/license
  */
 import * as ax from 'laxar';
 import * as patterns from 'laxar-patterns';

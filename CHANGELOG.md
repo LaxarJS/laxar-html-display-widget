@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v3.0.0-alpha.1
+
 - [#15](https://github.com/LaxarJS/ax-html-display-widget/issues/15): Fix repository url in package.json and fix widget naming in documentation
 
 

@@ -1,4 +1,4 @@
-# ax-html-display-widget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
+# laxar-html-display-widget [![Build Status](https://travis-ci.org/LaxarJS/ax-html-display-widget.svg?branch=master)](https://travis-ci.org/LaxarJS/ax-html-display-widget)
 
 Displays HTML content from a resource.
 
@@ -14,9 +14,9 @@ Displays HTML content from a resource.
 
 ## Appearance
 
-![Illustration of the ax-html-display-widget](docs/img/example.png)
+![Illustration of the laxar-html-display-widget](docs/img/example.png)
 
-An ax-html-display-widget displaying a text with a headline received through a resource.
+An laxar-html-display-widget displaying a text with a headline received through a resource.
 
 
 ## Usage

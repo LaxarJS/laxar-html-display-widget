@@ -9,10 +9,10 @@
   "homepage": "http://laxarjs.org",
   "repository": {
     "type": "https",
-    "url": "https://github.com/LaxarJS/laxar-html-display-widget.git"
+    "url": "https://github.com/LaxarJS/ax-html-display-widget.git"
   },
   "bugs": {
-    "url": "https://github.com/LaxarJS/laxar-html-display-widget/issues"
+    "url": "https://github.com/LaxarJS/ax-html-display-widget/issues"
   },
   "main": "laxar-html-display-widget.js",
   "browser": "dist/laxar-html-display-widget.js",

@@ -5,8 +5,8 @@
  */
 import * as ax from 'laxar';
 import * as patterns from 'laxar-patterns';
-export const injections = [ 'axWithDom', 'axFeatures', 'axEventBus', 'axI18n', 'axContext' ];
-export function create( axWithDom, features, eventBus, axI18n, context ) {
+export const injections = [ 'axWithDom', 'axFeatures', 'axI18n', 'axContext' ];
+export function create( withDom, features, i18n, context ) {
 
    let htmlObject;
 
@@ -14,27 +14,24 @@ export function create( axWithDom, features, eventBus, axI18n, context ) {
 
    patterns.resources.handlerFor( context ).registerResourceFromFeature( 'content', {
       onUpdateReplace() {
-         htmlObject = ax.object.path( context.resources.content, features.content.attribute );
-         try {
-            updateView();
-         }
-         finally { /*DO NOTHING*/ }
+         htmlObject = ax.object.path( context.resources.content, features.content.attribute, '' );
+         render();
       }
    } );
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   axI18n.whenLocaleChanged( updateView );
+   i18n.whenLocaleChanged( render );
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   function updateView() {
-      axWithDom( element => {
-         element.querySelector( 'div' ).innerHTML = axI18n.localize( htmlObject );
+   function render() {
+      withDom( element => {
+         element.querySelector( 'div' ).innerHTML = i18n.localize( htmlObject );
       } );
    }
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   return { onDomAvailable: updateView };
+   return { onDomAvailable: render };
 }

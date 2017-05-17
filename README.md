@@ -2,7 +2,9 @@
 
 Displays HTML content from a resource.
 
+
 ## Content
+
 * [Appearance](#appearance)
 * [Usage](#usage)
 * [Features](#features)
@@ -11,6 +13,7 @@ Displays HTML content from a resource.
 
 
 ## Appearance
+
 ![Illustration of the ax-html-display-widget](docs/img/example.png)
 
 An ax-html-display-widget displaying a text with a headline received through a resource.
@@ -19,10 +22,12 @@ An ax-html-display-widget displaying a text with a headline received through a r
 ## Usage
 
 ### Installation
+
 For installation instruction take a look at the [LaxarJS documentation](http://laxarjs.org/docs/laxar-v2-latest/manuals/installing_widgets/).
 
 
 ### Configuration example
+
 ```json
 {
    "widget": "laxar-html-display-widget",
@@ -38,9 +43,11 @@ Use this configuration on a page to get an laxar-html-display-widget which shows
 
 For full configuration options refer to the [widget.json](widget.json).
 
+
 ## Features
 
 ### 1. Illustrated Content (content)
+
 *R1.1* The widget MUST allow a configuration of a resource with HTML content.
 It MUST act as a slave of the resource according to the master/slave pattern.
 
@@ -48,16 +55,22 @@ It MUST act as a slave of the resource according to the master/slave pattern.
 
 *R1.3* The resource MUST be interpreted as (possibly internationalized) HTML content.
 
+
 ### 2. Support of Internationalization (i18n)
+
 *R2.1* The widget MUST allow the configuration of a *locale* as described in the documentation to [LaxarJS i18n].
 When displaying internationalized content, the widget MUST use the current language tag of the locale.
 
 
 ## Integration
+
 ### Patterns
+
 The widget supports the following event patterns as specified by the [LaxarJS Patterns] document.
 
+
 #### Resources
+
 * Resource: `content.resource`
    * Role: Slave
    * Access: Read/Write
@@ -65,6 +78,7 @@ The widget supports the following event patterns as specified by the [LaxarJS Pa
 
 
 ## References
+
 The following sources are useful or necessary for the understanding of this document.
 The links refer to the latest version of the documentation.
 Refer to the bower.json for the specific version that is normative for this document.

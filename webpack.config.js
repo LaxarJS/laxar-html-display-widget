@@ -6,7 +6,7 @@
 /* eslint-env node */
 
 const pkg = require( './package.json' );
-const path = require('path');
+const path = require( 'path' );
 
 const webpack = require( 'laxar-infrastructure' ).webpack( {
    context: __dirname,

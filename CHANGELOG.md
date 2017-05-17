@@ -2,11 +2,12 @@
 
 ## Last Changes
 
+
+## v3.0.0-alpha.0
+
 - [#13](https://github.com/LaxarJS/ax-html-display-widget/issues/13): widget integration technology is now `plain` instead of `angular`
    + **BREAKING CHANGE:** see ticket for details
-
 - [#12](https://github.com/LaxarJS/ax-html-display-widget/issues/12): The html template file name is now `laxar-html-display-widget.html` inseatd of `ax-html-display-widget.html`
-
 - [#11](https://github.com/LaxarJS/ax-html-display-widget/issues/11): update to webpack, LaxarJS 2, Angular 1.6 and Jasmine 2
     + **BREAKING CHANGE:** see ticket for details
 

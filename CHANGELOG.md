@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v3.0.0-rc.0
+
 - [#16](https://github.com/LaxarJS/laxar-html-display-widget/issues/16): renamed repository to match artifact
 
 
